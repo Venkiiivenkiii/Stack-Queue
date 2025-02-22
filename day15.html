@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+        margin: 0;
+        padding: 0;
+        }
+        .sub{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            color: white;
+        }
+        .hlo
+        {
+            background-color: grey;
+            color: blue;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sub" class="sub">hiii</div>
+<button onclick="ck();">Click</button>
+<button ondblclick="dk();">DblClick</button>
+<button onmousemove="moe();">mouse move</button>
+<button onmouseout="mout();">Mouse Out</button>
+<button onmouseover="mover();">Mouse Over</button>
+</body>
+<script>
+    const m=document.getElementById("sub");
+    function ck()
+    {
+        // m.style.backgroundColor=`red`;
+        // m.style.color=`blue`;
+        m.textContent="Click function......";
+        m.classList.add("hlo");
+    }
+    function dk()
+    {
+        m.classList.remove("hlo");
+        // m.style.backgroundColor=`pink`;
+        // m.style.color=`yellow`;
+        m.textContent="Dblclick function......";
+    }
+    function moe()
+    {
+        m.style.backgroundColor=`orange`;
+        m.style.color=`purple`;
+        m.textContent="mouse move function......";
+    }
+    function mout()
+    {
+        m.style.backgroundColor=`skyblue`;
+        m.style.color=`darkgreen`;
+        m.textContent="Mouse Out function......";
+    }
+    function mover()
+    {
+        m.style.backgroundColor=`yellowgreen`;
+        m.style.color=`white`;
+        m.textContent="Mouse Over function......";
+    }
+</script>
+<!-- <script src="/"></script> -->
+</html>

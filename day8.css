@@ -1,0 +1,32 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+.image
+{
+   background-color: aqua;
+   height:100vh;
+   width: 100%;
+ 
+   background-size: cover;
+   background-repeat: no-repeat;
+   /* background-position: 100px; */
+   /* filter:grayscale(70%); */
+   background-attachment: fixed;
+}
+.img1
+{
+    background-image: url(/image/pexels-duy-le-duc-1257907900-24200645.jpg);
+
+}
+.img2
+{
+    background-image: url(/image/pexels-nui-malama-169330637-26651624.jpg);
+
+}
+.img3
+{
+    background-image: url(/image/th.jpg);
+
+}
